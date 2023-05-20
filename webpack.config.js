@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/mf-richteri/logs',
+      'dist/modules/mf-logs',
       'packages/modules/mf-logs/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
