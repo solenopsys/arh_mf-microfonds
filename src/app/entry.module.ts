@@ -11,7 +11,6 @@ import {MicrofondsComponent} from "./microfonds/microfonds.component";
             path: "",
             component: MicrofondsComponent,
         }]),
-
     ],
     providers: [],
 })
