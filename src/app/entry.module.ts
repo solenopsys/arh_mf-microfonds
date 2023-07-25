@@ -1,14 +1,19 @@
-
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
+import {Route, RouterModule} from '@angular/router';
+import {PromotionComponent} from "./promotion/promotion.component";
+import {MicrofondsComponent} from "./microfonds/microfonds.component";
 
 @NgModule({
-  declarations: [],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
-  ],
-  providers: [],
+    declarations: [MicrofondsComponent, PromotionComponent],
+    imports: [
+        RouterModule.forChild([{
+            path: "",
+            component: MicrofondsComponent,
+        }]),
+
+    ],
+    providers: [],
 })
-export class RemoteEntryModule {}
+export class RemoteEntryModule {
+}
